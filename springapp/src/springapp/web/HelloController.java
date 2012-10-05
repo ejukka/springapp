@@ -11,6 +11,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import java.io.IOException;
+import java.util.Date;
 
 public class HelloController implements Controller {
 
@@ -19,8 +20,15 @@ public class HelloController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        logger.info("Returning hello view");
+    	logger.info("HelloController starts...");
+    	
+    	Date date = new Date();
 
-        return new ModelAndView("hello.jsp");
+    	String now = date.toString();
+    	
+    	logger.info("returning hello view.");
+    	logger.info("...HelloController ends");
+    	
+        return new ModelAndView("WEB-INF/jsp/hello.jsp", "now", now);
     }
 }

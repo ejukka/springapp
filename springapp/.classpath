@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="/Users/jedv/git/springapp/springapp/war/WEB-INF/lib/spring.jar"/>
 	<classpathentry kind="lib" path="/Users/jedv/git/springapp/springapp/war/WEB-INF/lib/servlet-api.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/Users/jedv/Desktop/devaus/vaadin-6.8.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

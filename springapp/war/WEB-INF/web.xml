@@ -23,4 +23,23 @@
     </welcome-file>
   </welcome-file-list>
 
+	<display-name>springapp</display-name>
+	<servlet>
+		<servlet-name>VaadinHelloWorld</servlet-name>
+		<servlet-class>com.vaadin.terminal.gwt.server.ApplicationServlet</servlet-class>
+		<init-param>
+			<description>Vaadin application class to start</description>
+			<param-name>application</param-name>
+			<param-value>
+                  springapp.web.VaadinHelloWorld
+                </param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VaadinHelloWorld</servlet-name>
+		<!-- <url-pattern>*.html</url-pattern>-->
+		<url-pattern>/VAADIN/*</url-pattern>
+	</servlet-mapping>
+	
+
 </web-app>
